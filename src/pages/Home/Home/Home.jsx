@@ -1,10 +1,11 @@
 import Banner from "../Banner/Banner";
+import SeaAnimalsTube from "../sea-amimails-tube/SeaAnimalsTube";
 
 const Home = () => {
   return (
     <div>
       <Banner></Banner>
-      <h2>This is home</h2>
+      <SeaAnimalsTube></SeaAnimalsTube>
     </div>
   );
 };
