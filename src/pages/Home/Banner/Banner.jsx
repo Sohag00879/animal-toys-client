@@ -3,17 +3,18 @@ const Banner = () => {
     <div className="carousel w-full h-[400px] mt-16">
       <div id="slide1" className="carousel-item relative w-full">
         <img
-          src="https://media-be.chewy.com/wp-content/uploads/2018/05/9-not-having-enough-toys-x-670-440x.jpg"
+          src="https://terrabybattat.com/wp-content/uploads/header-cateogry_animal-toys-wild.jpg"
           className="w-full rounded-xl bg-cover"
         />
         <div className="absolute rounded-xl h-full flex items-center right-0 top-0 bg-gradient-to-r from-[rgba(21,21,21,0)] to-[black]">
           <div className="text-white space-y-7 pr-16 text-right  ">
             <h2 className="text-5xl font-bold">
-              Animal Toys Of <br /> Lazzy Dog
+              Animal Toys Of Local
+              <br /> Kingdom
             </h2>
             <p className="font-bold">
-              Find your favorites with animal toys selection of toy <br />
-              figurines. This is lazzy dog & verious toys.
+              We gathered local animal kingdom news for <br /> inspiring stories
+              of love and loyalty!
             </p>
             <div>
               <button className="btn btn-outline btn-info">See More</button>
@@ -31,7 +32,7 @@ const Banner = () => {
       </div>
       <div id="slide2" className="carousel-item relative w-full">
         <img
-          src="https://i0.wp.com/douglascuddletoy.com/wp-content/uploads/2019/05/animals-banner-2019.jpg?fit=1200%2C450&ssl=1"
+          src="https://terrabybattat.com/wp-content/uploads/header-cateogry_playsets.jpg"
           className="w-full rounded-xl bg-cover"
         />
         <div className="absolute rounded-xl h-full flex items-center right-0 top-0 bg-gradient-to-r from-[rgba(21,21,21,0)] to-[black]">
@@ -59,18 +60,18 @@ const Banner = () => {
       </div>
       <div id="slide3" className="carousel-item relative w-full">
         <img
-          src="https://terrabybattat.com/wp-content/uploads/header-cateogry_animal-toys-wild.jpg"
+          src="https://terrabybattat.com/wp-content/uploads/header-cateogry_dinosaurs.jpg"
           className="w-full rounded-xl bg-cover"
         />
         <div className="absolute rounded-xl h-full flex items-center right-0 top-0 bg-gradient-to-r from-[rgba(21,21,21,0)] to-[black]">
           <div className="text-white space-y-7 pr-16 text-right  ">
             <h2 className="text-5xl font-bold">
-              Animal Toys Of Local
-              <br /> Kingdom
+              Animal Toys Of
+              <br /> Dragon
             </h2>
             <p className="font-bold">
-              We gathered local animal kingdom news for <br /> inspiring stories
-              of love and loyalty!
+              This are local animal kingdom of <br /> dragon stories of love and
+              amazaing!
             </p>
             <div>
               <button className="btn btn-outline btn-info">See More</button>
