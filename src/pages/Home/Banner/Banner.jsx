@@ -4,7 +4,7 @@ const Banner = () => {
       <div id="slide1" className="carousel-item relative w-full">
         <img
           src="https://media-be.chewy.com/wp-content/uploads/2018/05/9-not-having-enough-toys-x-670-440x.jpg"
-          className="w-full rounded-xl"
+          className="w-full rounded-xl bg-cover"
         />
         <div className="absolute rounded-xl h-full flex items-center right-0 top-0 bg-gradient-to-r from-[rgba(21,21,21,0)] to-[black]">
           <div className="text-white space-y-7 pr-16 text-right  ">
@@ -32,7 +32,7 @@ const Banner = () => {
       <div id="slide2" className="carousel-item relative w-full">
         <img
           src="https://i0.wp.com/douglascuddletoy.com/wp-content/uploads/2019/05/animals-banner-2019.jpg?fit=1200%2C450&ssl=1"
-          className="w-full rounded-xl"
+          className="w-full rounded-xl bg-cover"
         />
         <div className="absolute rounded-xl h-full flex items-center right-0 top-0 bg-gradient-to-r from-[rgba(21,21,21,0)] to-[black]">
           <div className="text-white space-y-7 pr-16 text-right  ">
@@ -60,7 +60,7 @@ const Banner = () => {
       <div id="slide3" className="carousel-item relative w-full">
         <img
           src="https://terrabybattat.com/wp-content/uploads/header-cateogry_animal-toys-wild.jpg"
-          className="w-full rounded-xl"
+          className="w-full rounded-xl bg-cover"
         />
         <div className="absolute rounded-xl h-full flex items-center right-0 top-0 bg-gradient-to-r from-[rgba(21,21,21,0)] to-[black]">
           <div className="text-white space-y-7 pr-16 text-right  ">
