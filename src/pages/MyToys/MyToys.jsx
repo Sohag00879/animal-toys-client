@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
-import ShowAllToys from "./ShowAllToys";
+import { useContext, useEffect, useState } from "react";
+import { AuthContext } from "../providers/AuthProvider";
+import ShowMyToys from "./ShowMyToy";
 
-const AllToys = () => {
-  const [allToys, setAllToys] = useState([]);
+const MyToys = () => {
+  const [myToys, setMyToys] = useState([]);
+  const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allToys")
+    fetch(`http://localhost:5000/myToys?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => {
-        setAllToys(data);
+        setMyToys(data);
         console.log(data);
       });
   }, []);
@@ -29,8 +31,8 @@ const AllToys = () => {
             </tr>
           </thead>
           <tbody>
-            {allToys.map((allToy) => (
-              <ShowAllToys key={allToy.id} allToy={allToy}></ShowAllToys>
+            {myToys.map((myToy) => (
+              <ShowMyToys key={myToy.id} myToy={myToy}></ShowMyToys>
             ))}
           </tbody>
         </table>
@@ -39,4 +41,4 @@ const AllToys = () => {
   );
 };
 
-export default AllToys;
+export default MyToys;

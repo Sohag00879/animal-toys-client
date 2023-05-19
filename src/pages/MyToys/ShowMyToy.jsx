@@ -1,5 +1,5 @@
-const ShowAllToys = ({ allToy }) => {
-  const { name, price, quantity, photo, sellerName, sellerEmail } = allToy;
+const ShowMyToys = ({ myToy }) => {
+  const { name, price, quantity, photo, sellerName, sellerEmail } = myToy;
 
   return (
     <tr>
@@ -17,10 +17,11 @@ const ShowAllToys = ({ allToy }) => {
       <td>{price}</td>
       <td>{quantity}</td>
       <th>
-        <button className="btn btn-outline btn-primary">VIEW DETAILS</button>
+        <button className="btn btn-outline btn-primary">Update</button>
+        <button className="btn btn-outline btn-secondary ml-4">Delete</button>
       </th>
     </tr>
   );
 };
 
-export default ShowAllToys;
+export default ShowMyToys;
