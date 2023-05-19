@@ -1,6 +1,6 @@
 const RemoteControlToy = () => {
   return (
-    <div className="mt-6">
+    <div className="mt-14">
       <h2 className="text-3xl font-bold text-center mb-6">
         REMOTE CONTROL TOYS
       </h2>
