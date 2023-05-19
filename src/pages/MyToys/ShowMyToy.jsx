@@ -1,5 +1,27 @@
+import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
+
 const ShowMyToys = ({ myToy }) => {
   const { name, price, quantity, photo, sellerName, sellerEmail } = myToy;
+
+  const loadedMyToys = useLoaderData();
+  const [myToys, setMyToys] = useState(loadedMyToys);
+
+  const handleDeleteToy = (_id) => {
+    console.log("delete", _id);
+    fetch(`http://localhost:5000/myToys/${_id}`, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.deletedCount > 0) {
+          alert("Deleted successfully");
+          const remaining = myToys.filter((myToy) => myToy._id !== _id);
+          setMyToys(remaining);
+        }
+      });
+  };
 
   return (
     <tr>
@@ -18,7 +40,12 @@ const ShowMyToys = ({ myToy }) => {
       <td>{quantity}</td>
       <th>
         <button className="btn btn-outline btn-primary">Update</button>
-        <button className="btn btn-outline btn-secondary ml-4">Delete</button>
+        <button
+          onClick={() => handleDeleteToy(myToy._id)}
+          className="btn btn-outline btn-secondary ml-4"
+        >
+          Delete
+        </button>
       </th>
     </tr>
   );

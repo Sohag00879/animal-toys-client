@@ -14,7 +14,8 @@ const AllToys = () => {
   }, []);
 
   return (
-    <div className="mt-12 mb-6">
+    <div className="mt-16 mb-16">
+      <h2 className="font-bold text-center text-3xl mb-14">ALL TOYS</h2>
       <div className="overflow-x-auto w-full">
         <table className="table w-full">
           {/* head */}

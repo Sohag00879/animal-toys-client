@@ -1,6 +1,6 @@
 const Blog = () => {
   return (
-    <div className="border-2 border-indigo-600 p-12 mt-4 mb-4">
+    <div className="border-2 border-indigo-600 p-12 mt-16 mb-16">
       <h2 className="text-3xl font-bold text-center mb-12">
         QUESTION AND ANSEWR
       </h2>

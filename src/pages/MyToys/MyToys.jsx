@@ -16,7 +16,8 @@ const MyToys = () => {
   }, []);
 
   return (
-    <div className="mt-12 mb-6">
+    <div className="mt-16 mb-6">
+      <h2 className="font-bold text-center text-3xl mb-14">MY TOYS</h2>
       <div className="overflow-x-auto w-full">
         <table className="table w-full">
           {/* head */}
@@ -32,7 +33,7 @@ const MyToys = () => {
           </thead>
           <tbody>
             {myToys.map((myToy) => (
-              <ShowMyToys key={myToy.id} myToy={myToy}></ShowMyToys>
+              <ShowMyToys key={myToy._id} myToy={myToy}></ShowMyToys>
             ))}
           </tbody>
         </table>
