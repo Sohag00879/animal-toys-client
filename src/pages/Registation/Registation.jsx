@@ -93,10 +93,10 @@ const Registation = () => {
                 <input
                   className="btn btn-primary"
                   type="submit"
-                  value="Login"
+                  value="Registation"
                 />
               </div>
-              <button className="btn">Sign-with-google</button>
+
               <p>
                 Already an acount? Please..
                 <Link className="text-red-700" to="/login">

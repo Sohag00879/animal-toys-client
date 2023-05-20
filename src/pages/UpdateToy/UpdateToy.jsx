@@ -61,6 +61,7 @@ const UpdateToy = () => {
                 defaultValue={loadedUser?.category}
                 name="category"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -69,6 +70,7 @@ const UpdateToy = () => {
                 defaultValue={loadedUser?.price}
                 name="price"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -77,6 +79,7 @@ const UpdateToy = () => {
                 defaultValue={loadedUser?.rating}
                 name="rating"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -85,6 +88,7 @@ const UpdateToy = () => {
                 defaultValue={loadedUser?.quantity}
                 name="quantity"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -93,6 +97,7 @@ const UpdateToy = () => {
                 defaultValue={loadedUser?.details}
                 name="details"
                 className="input input-bordered"
+                required
               />
             </div>
           </div>
@@ -102,6 +107,7 @@ const UpdateToy = () => {
               defaultValue={loadedUser?.photo}
               name="photo"
               className="input input-bordered"
+              required
             />
           </div>
         </div>

@@ -37,6 +37,9 @@ const AddToys = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        if (data.insertedId) {
+          alert("User added successfully");
+        }
       });
   };
 
@@ -52,6 +55,7 @@ const AddToys = () => {
                 name="name"
                 placeholder="Toy Name"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -60,6 +64,7 @@ const AddToys = () => {
                 placeholder="Sub Category"
                 name="category"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -68,6 +73,7 @@ const AddToys = () => {
                 placeholder="Price"
                 name="price"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -76,6 +82,7 @@ const AddToys = () => {
                 placeholder="Rating"
                 name="rating"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -84,6 +91,7 @@ const AddToys = () => {
                 placeholder="Available Quantity"
                 name="quantity"
                 className="input input-bordered"
+                required
               />
             </div>
             <div className="form-control">
@@ -92,6 +100,7 @@ const AddToys = () => {
                 placeholder="Details"
                 name="details"
                 className="input input-bordered"
+                required
               />
             </div>
           </div>
@@ -101,6 +110,7 @@ const AddToys = () => {
               placeholder="Photo Url"
               name="photo"
               className="input input-bordered"
+              required
             />
           </div>
         </div>
