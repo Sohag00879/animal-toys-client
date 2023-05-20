@@ -33,7 +33,12 @@ const MyToys = () => {
           </thead>
           <tbody>
             {myToys.map((myToy) => (
-              <ShowMyToys key={myToy._id} myToy={myToy}></ShowMyToys>
+              <ShowMyToys
+                key={myToy._id}
+                myToy={myToy}
+                myToys={myToys}
+                setMyToys={setMyToys}
+              ></ShowMyToys>
             ))}
           </tbody>
         </table>

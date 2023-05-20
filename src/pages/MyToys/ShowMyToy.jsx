@@ -1,12 +1,7 @@
-import { useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const ShowMyToys = ({ myToy }) => {
+const ShowMyToys = ({ myToy, myToys, setMyToys }) => {
   const { name, price, quantity, photo, sellerName, sellerEmail } = myToy;
-
-  const loadedMyToys = useLoaderData();
-  const [myToys, setMyToys] = useState(loadedMyToys);
-
   const handleDeleteToy = (_id) => {
     console.log("delete", _id);
     fetch(`http://localhost:5000/myToys/${_id}`, {
@@ -39,7 +34,9 @@ const ShowMyToys = ({ myToy }) => {
       <td>{price}</td>
       <td>{quantity}</td>
       <th>
-        <button className="btn btn-outline btn-primary">Update</button>
+        <Link to={`/updateToys/${myToy._id}`}>
+          <button className="btn btn-outline btn-primary">Update</button>
+        </Link>
         <button
           onClick={() => handleDeleteToy(myToy._id)}
           className="btn btn-outline btn-secondary ml-4"
