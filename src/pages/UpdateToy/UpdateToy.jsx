@@ -13,7 +13,7 @@ const UpdateToy = () => {
     const details = form.details.value;
     const photo = form.photo.value;
 
-    const sellerInfo = {
+    const updatedUser = {
       name,
       category,
       price,
@@ -21,23 +21,24 @@ const UpdateToy = () => {
       quantity,
       details,
       photo,
-      //   sellerName: user.displayName,
-      //   email: user.email,
     };
 
-    console.log(sellerInfo);
+    console.log(updatedUser);
 
-    // fetch(`http://localhost:5000/updateToys/${}`, {
-    //   method: "POST",
-    //   headers: {
-    //     "content-type": "application/json",
-    //   },
-    //   body: JSON.stringify(sellerInfo),
-    // })
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //   });
+    fetch(`http://localhost:5000/updateToys/${loadedUser._id}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(updatedUser),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.modifiedCount > 0) {
+          alert("User Updated successfully");
+        }
+      });
   };
 
   return (
