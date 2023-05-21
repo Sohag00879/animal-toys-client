@@ -1,9 +1,9 @@
 const ToyGallery = () => {
   return (
-    <div>
+    <div data-aos="flip-left">
       <h2 className="text-3xl font-bold text-center mt-12">TOY GALLERY</h2>
-      <div className="grid grid-cols-4 mt-6 mb-10">
-        <div className="card w-80 bg-base-100 shadow-xl">
+      <div className="md:grid md:grid-cols-4 flex flex-col items-center mt-6 mb-10">
+        <div className="card w-80 bg-base-100 flex justify-center items-center shadow-xl ">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -15,7 +15,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Elephant</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl ">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -27,7 +27,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Alligator</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -39,7 +39,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Cat Tree</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -51,7 +51,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Caribou</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -63,7 +63,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Dinosaurs</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -75,7 +75,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Dolphin</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -87,7 +87,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Fox</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -99,7 +99,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Lion</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -111,7 +111,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Tiger</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -123,7 +123,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Tropical Fish World</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"
@@ -135,7 +135,7 @@ const ToyGallery = () => {
             <h2 className="card-title">Wild Animals</h2>
           </div>
         </div>
-        <div className="card w-80 bg-base-100 shadow-xl">
+        <div className="card w-80 bg-base-100 ml-4 shadow-xl">
           <figure>
             <img
               className="transition duration-100 transform hover:animate-bounce"

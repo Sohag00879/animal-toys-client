@@ -3,8 +3,8 @@ import "react-tabs/style/react-tabs.css";
 
 const TabToy = () => {
   return (
-    <div className="mt-12 mb-12">
-      <h2 className="font-bold text-center mt-12 mb-12 text-3xl">
+    <div data-aos="flip-left" className="mt-12 mb-12">
+      <h2 className="font-bold text-center mt-12 mb-12 text-2xl">
         DIFFERNT CATEGORIES TOY
       </h2>
       <Tabs>
@@ -16,8 +16,8 @@ const TabToy = () => {
 
         {/* Wild */}
         <TabPanel>
-          <div className="grid grid-cols-2">
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div className="grid md:grid-cols-2 grid-cols-1">
+            <div className="card card-compact w-96 bg-base-100 p-4 shadow-xl">
               <figure>
                 <img
                   src="https://terrabybattat.com/wp-content/uploads/AN2712-pr-c-768x768.jpg"
@@ -35,7 +35,7 @@ const TabToy = () => {
                 </div>
               </div>
             </div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact w-96 bg-base-100 p-4 shadow-xl">
               <figure>
                 <img
                   src="https://terrabybattat.com/wp-content/uploads/AN2697_PR-768x768.png"
@@ -57,8 +57,8 @@ const TabToy = () => {
         </TabPanel>
         {/* Fish */}
         <TabPanel>
-          <div className="grid grid-cols-2">
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div className="grid md:grid-cols-2 grid-cols-1">
+            <div className="card card-compact w-96 bg-base-100 p-4 shadow-xl">
               <figure>
                 <img
                   src="https://terrabybattat.com/wp-content/uploads/AN2611-pr-c-hs-768x768.jpg"
@@ -75,7 +75,7 @@ const TabToy = () => {
                 </div>
               </div>
             </div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact w-96 bg-base-100 p-4 shadow-xl">
               <figure>
                 <img
                   src="https://terrabybattat.com/wp-content/uploads/AN2604-dp-A-hs-768x768.jpg"
@@ -97,8 +97,8 @@ const TabToy = () => {
         </TabPanel>
         {/* Bird */}
         <TabPanel>
-          <div className="grid grid-cols-2">
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+          <div className="grid md:grid-cols-2 grid-cols-1">
+            <div className="card card-compact w-96 bg-base-100 p-4 shadow-xl">
               <figure>
                 <img
                   src="https://terrabybattat.com/wp-content/uploads/AN2621_PR-768x768.png"
@@ -117,7 +117,7 @@ const TabToy = () => {
                 </div>
               </div>
             </div>
-            <div className="card card-compact w-96 bg-base-100 shadow-xl">
+            <div className="card card-compact w-96 bg-base-100 p-4 shadow-xl">
               <figure>
                 <img
                   src="https://terrabybattat.com/wp-content/uploads/AN2767_PR-768x768.jpg"

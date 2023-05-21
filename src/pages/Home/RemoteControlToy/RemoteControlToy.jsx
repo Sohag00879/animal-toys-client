@@ -1,11 +1,11 @@
 const RemoteControlToy = () => {
   return (
-    <div className="mt-14">
+    <div data-aos="flip-left" className="mt-14">
       <h2 className="text-3xl font-bold text-center mb-6">
         REMOTE CONTROL TOYS
       </h2>
-      <div className="grid grid-cols-3 gap-14">
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-14">
+        <div className="card card-compact w-96 bg-base-100 p-4 shadow-xl">
           <figure>
             <img
               src="https://terrabybattat.com/wp-content/uploads/AN2801_PR_MAIN-768x768.png"
@@ -20,7 +20,7 @@ const RemoteControlToy = () => {
             </div>
           </div>
         </div>
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="card card-compact w-96 bg-base-100 p-4 shadow-xl">
           <figure>
             <img
               src="https://terrabybattat.com/wp-content/uploads/AN2818_PR_MAIN-768x768.png"
@@ -35,7 +35,7 @@ const RemoteControlToy = () => {
             </div>
           </div>
         </div>
-        <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <div className="card card-compact w-96 bg-base-100 p-4 shadow-xl">
           <figure>
             <img
               src="https://terrabybattat.com/wp-content/uploads/AN2854_PR_MAIN-768x768.png"
