@@ -8,7 +8,7 @@ const AllToys = () => {
   const [isSearch, setIsSearch] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allToys")
+    fetch("https://animal-toys-server-mocha.vercel.app/allToys")
       .then((res) => res.json())
       .then((data) => {
         setAllToys(data);
@@ -38,7 +38,7 @@ const AllToys = () => {
     <div className="mt-16 mb-16">
       <h2 className="font-bold text-center text-3xl mb-14">ALL TOYS</h2>
       {/* serach */}
-      <div className="form-control">
+      <div className="form-control mb-4">
         <div className="input-group">
           <div className="relative">
             <input

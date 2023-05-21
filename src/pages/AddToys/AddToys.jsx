@@ -28,7 +28,7 @@ const AddToys = () => {
 
     console.log(sellerInfo);
 
-    fetch("http://localhost:5000/addToy", {
+    fetch("https://animal-toys-server-mocha.vercel.app/addToy", {
       method: "POST",
       headers: {
         "content-type": "application/json",

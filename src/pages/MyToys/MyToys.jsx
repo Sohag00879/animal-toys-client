@@ -7,7 +7,9 @@ const MyToys = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myToys?email=${user.email}`)
+    fetch(
+      `https://animal-toys-server-mocha.vercel.app/myToys?email=${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setMyToys(data);

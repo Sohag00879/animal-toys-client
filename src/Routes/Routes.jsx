@@ -46,7 +46,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/updateToys/${params.id}`),
+          fetch(
+            `https://animal-toys-server-mocha.vercel.app/updateToys/${params.id}`
+          ),
       },
       {
         path: "/myToys",
@@ -59,7 +61,9 @@ const router = createBrowserRouter([
       {
         path: "/viewDetailsToy/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/singleToys/${params.id}`),
+          fetch(
+            `https://animal-toys-server-mocha.vercel.app/singleToys/${params.id}`
+          ),
         element: (
           <PrivateRoute>
             <ViewDetailsToy></ViewDetailsToy>

@@ -26,13 +26,16 @@ const UpdateToy = () => {
 
     console.log(updatedUser);
 
-    fetch(`http://localhost:5000/updateToys/${loadedUser._id}`, {
-      method: "PUT",
-      headers: {
-        "content-type": "application/json",
-      },
-      body: JSON.stringify(updatedUser),
-    })
+    fetch(
+      `https://animal-toys-server-mocha.vercel.app/updateToys/${loadedUser._id}`,
+      {
+        method: "PUT",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(updatedUser),
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

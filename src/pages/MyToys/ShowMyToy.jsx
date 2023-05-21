@@ -5,7 +5,7 @@ const ShowMyToys = ({ myToy, myToys, setMyToys }) => {
   const { name, price, quantity, photo, sellerName, sellerEmail } = myToy;
   const handleDeleteToy = (_id) => {
     console.log("delete", _id);
-    fetch(`http://localhost:5000/myToys/${_id}`, {
+    fetch(`https://animal-toys-server-mocha.vercel.app/myToys/${_id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
