@@ -1,3 +1,4 @@
+import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
 
 const ShowMyToys = ({ myToy, myToys, setMyToys }) => {
@@ -11,7 +12,7 @@ const ShowMyToys = ({ myToy, myToys, setMyToys }) => {
       .then((data) => {
         console.log(data);
         if (data.deletedCount > 0) {
-          alert("Deleted successfully");
+          toast.success("Deleted successfully!");
           const remaining = myToys.filter((myToy) => myToy._id !== _id);
           setMyToys(remaining);
         }

@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { toast } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
@@ -24,6 +25,7 @@ const Registation = () => {
         updateUser({ displayName: name, photoURL: photoUrl })
           .then(() => {
             console.log(loggedUser);
+            toast.success("Registation Successfully!");
             navigate("/");
           })
           .catch((error) => {

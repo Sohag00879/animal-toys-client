@@ -1,3 +1,4 @@
+import { toast } from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 
 const UpdateToy = () => {
@@ -36,7 +37,7 @@ const UpdateToy = () => {
       .then((data) => {
         console.log(data);
         if (data.modifiedCount > 0) {
-          alert("User Updated successfully");
+          toast.success("Updated Toy successfully!");
         }
       });
   };
