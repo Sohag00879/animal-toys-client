@@ -57,6 +57,7 @@ git clone https://github.com/Sohag00879/animal-toys-client.git
 <h5>Install Dependencies:</h1>
 
 cd animal-toys-client
+
 npm install
 
 <h5>Run the Development Server:</h5>
